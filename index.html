@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robot" content="index,follow" />
+    <meta name="description" content=""/>
+    <meta name="author" content="yang"/>
+    <base target="_self"/>
+    <!--page icon goes here-->
+    <link rel="shortcut icon" href=""/>
+    <link rel="bookmark" href=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>代辦清單</title>
+</head>
+<body>
+    <header>
+        <h1>楊祐的待辦事項</h1>
+    </header>
+
+    <form>
+        <input type="text"/>
+        <input type="number"  placeholder="Y" value="2021" required/>
+        <input type="number"  min="1" max="12" placeholder="M" required/>
+        <input type="number"  min="1" max="31" placeholder="D" required/>
+        <button type="submit">新增</button>
+    </form>
+
+    <br/>
+
+    <div class="sort">
+        <button>排序</button>
+    </div>
+    <br/>
+
+    <section></section>
+    <script src="./app.js"></script>
+</body>
+</html>

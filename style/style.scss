@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+i {
+  pointer-events: none; //讓使用者點不到i指點的到button
+}
+body {
+  background-color: black;
+}
+header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: white;
+  }
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input,
+  button {
+    border: 0;
+    padding: 1rem 3rem;
+    font-size: 1.75rem;
+    margin: 0.5rem;
+  }
+  input[type="number"] {
+    width: 10rem;
+    text-align: center;
+  }
+  button {
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  div.todo {
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    margin: 0.2rem 0;
+    transition: all 0.1s ease;
+    p {
+      background-color: white;
+      color: black;
+      padding: 0.25rem 0.5rem;
+      font-size: 1.75rem;
+      margin-right: 10px;
+    }
+    p.todo-text {
+      width: 50%;
+    }
+    p.todo-time {
+      width: 20%;
+    }
+    button {
+      color: white;
+      padding: 0.25rem 0.5rem;
+      font-size: 1.75rem;
+    }
+    button.complete-button {
+      background-color: yellowgreen;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    button.trash-button {
+      background-color: red;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.3rem;
+}
+@keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}
+div.sort {
+  display: flex;
+  justify-content: center;
+  button {
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: 0;
+    padding: 1rem 3rem;
+    font-size: 1.75rem;
+    margin: 0.5rem;
+  }
+}
